@@ -1,0 +1,15 @@
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\bin\Debug\net6.0\JogoXadrez.exe
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\bin\Debug\net6.0\JogoXadrez.deps.json
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\bin\Debug\net6.0\JogoXadrez.runtimeconfig.json
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\bin\Debug\net6.0\JogoXadrez.dll
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\bin\Debug\net6.0\JogoXadrez.pdb
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.csproj.AssemblyReference.cache
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.GeneratedMSBuildEditorConfig.editorconfig
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.AssemblyInfoInputs.cache
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.AssemblyInfo.cs
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.csproj.CoreCompileInputs.cache
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.dll
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\refint\JogoXadrez.dll
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.pdb
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\JogoXadrez.genruntimeconfig.cache
+E:\Udemy\Curso .NET\JogoXadrez\JogoXadrez\JogoXadrez\obj\Debug\net6.0\ref\JogoXadrez.dll

@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Tabuleiro;
+
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro(8, 8);
+
+        Console.ReadLine();
+    }
+}
