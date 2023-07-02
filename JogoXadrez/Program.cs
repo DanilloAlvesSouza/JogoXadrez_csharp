@@ -11,6 +11,7 @@ internal class Program
         {
             PartidaDeXadrez partida = new PartidaDeXadrez();
 
+
             while (!partida.Terminada)
             {
                 Console.Clear();
@@ -19,6 +20,13 @@ internal class Program
                 Console.WriteLine();
                 Console.Write("Origem: ");
                 Posicao origem = Tela.LerPosicaoXadrez().toPosicao();
+
+                bool[,] posicoesPossiveis = partida.Tab.peca(origem).MovimentosPosiveis();
+
+                Console.Clear();
+                Tela.imprimirTabuleiro(partida.Tab,posicoesPossiveis);
+
+                Console.WriteLine();
                 Console.Write("Destino: ");
                 Posicao destino = Tela.LerPosicaoXadrez().toPosicao();
 
