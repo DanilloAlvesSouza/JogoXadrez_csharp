@@ -1,11 +1,14 @@
-﻿using Tabuleiro;
+﻿
+using JogoXadrez;
+using tabuleiro;
 
 internal class Program
 {
     private static void Main(string[] args)
     {
-        Tabuleiro.Tabuleiro tab = new Tabuleiro.Tabuleiro(8, 8);
+        Tabuleiro tab = new Tabuleiro(8, 8);
 
+        Tela.imprimirTabuleiro(tab);
         Console.ReadLine();
     }
 }
