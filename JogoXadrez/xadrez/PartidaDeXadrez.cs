@@ -95,7 +95,7 @@ namespace JogoXadrez.xadrez
 
         public void ValidarPosicaoDestino(Posicao origem, Posicao destino)
         {
-            if (!Tab.peca(origem).PodeMoverPara(destino))
+            if (!Tab.peca(origem).MovimentoPossivel(destino))
             {
                 throw new TabuleiroException("Posição de destino invalida !");
             }
@@ -183,6 +183,7 @@ namespace JogoXadrez.xadrez
                     {
                         if (mat[i, j])
                         {
+                            Posicao origem = x.Posicao;
                             Posicao destino = new Posicao(i, j);
                             Peca pecaCapturada = ExecutaMovimento(x.Posicao, destino);
                             bool testeXeque = EstaEmXeque(cor);
