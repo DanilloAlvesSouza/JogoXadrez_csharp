@@ -17,11 +17,9 @@ internal class Program
                 try
                 {
                     Console.Clear();
-                    Tela.imprimirTabuleiro(partida.Tab);
+                    Tela.ImprimirPatida(partida);
                     Console.WriteLine();
-                    Console.WriteLine("Turno: " + partida.Turno);
-                    Console.WriteLine("Aguardando jogada: " + partida.JogadorAtual);
-
+                    
                     Console.WriteLine();
                     Console.Write("Origem: ");
                     Posicao origem = Tela.LerPosicaoXadrez().toPosicao();

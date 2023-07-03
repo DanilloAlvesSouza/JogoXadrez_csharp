@@ -38,7 +38,7 @@
             p.Posicao = pos;
         }
 
-        public Peca retircarPeca(Posicao pos)
+        public Peca retirarPeca(Posicao pos)
         {
             if(peca(pos)==null)
             {
