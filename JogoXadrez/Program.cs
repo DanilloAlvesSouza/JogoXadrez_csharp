@@ -25,7 +25,7 @@ internal class Program
                     Posicao origem = Tela.LerPosicaoXadrez().toPosicao();
                     partida.ValidarPosicaoOrigem(origem);
 
-                    bool[,] posicoesPossiveis = partida.Tab.peca(origem).MovimentosPosiveis();
+                    bool[,] posicoesPossiveis = partida.Tab.peca(origem).MovimentosPossiveis();
 
                     Console.Clear();
                     Tela.imprimirTabuleiro(partida.Tab, posicoesPossiveis);

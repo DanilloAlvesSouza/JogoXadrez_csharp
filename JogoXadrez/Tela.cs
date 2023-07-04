@@ -22,13 +22,14 @@ namespace JogoXadrez
                 {
                     Console.WriteLine("XEQUE!");
                 }
+                else
+                {
+                    Console.WriteLine("XEQUEMATE!");
+                    Console.WriteLine("Vencedor: " + partida.JogadorAtual);
+                }
 
             }
-            else
-            {
-                Console.WriteLine("XEQUEMATE!");
-                Console.WriteLine("Vencedor: " + partida.JogadorAtual);
-            }
+           
             
         }
 
