@@ -12,6 +12,7 @@ namespace JogoXadrez.xadrez
         private HashSet<Peca> Pecas;
         private HashSet<Peca> Capturadas;
         public bool Xeque { get; private set; }
+        public Peca VulneravelEnPassant { get; private set; }
 
         public PartidaDeXadrez()
         {
@@ -20,6 +21,7 @@ namespace JogoXadrez.xadrez
             JogadorAtual = Cor.Branca;
             Terminada = false;
             Xeque = false;
+            VulneravelEnPassant = null;
             Pecas = new HashSet<Peca>();
             Capturadas = new HashSet<Peca>();
             ColocarPecas();
@@ -53,6 +55,24 @@ namespace JogoXadrez.xadrez
                 Peca T = Tab.retirarPeca(origemT);
                 T.IncrementaQteMovimentos();
                 Tab.ColocarPeca(T, destinoT);
+            }
+            // #jogadaespecial en passant
+            if (p is Peao)
+            {
+                if (origem.Coluna != destino.Coluna && pecaCapturada == null)
+                {
+                    Posicao posP;
+                    if (p.Cor == Cor.Branca)
+                    {
+                        posP = new Posicao(destino.Linha + 1, destino.Coluna);
+                    }
+                    else
+                    {
+                        posP = new Posicao(destino.Linha - 1, destino.Coluna);
+                    }
+                    pecaCapturada = Tab.retirarPeca(posP);
+                    Capturadas.Add(pecaCapturada);
+                }
             }
             return pecaCapturada;
         }
@@ -88,6 +108,24 @@ namespace JogoXadrez.xadrez
                 Peca T = Tab.retirarPeca(destinoT);
                 T.DecrementaQteMovimentos();
                 Tab.ColocarPeca(T, origemT);
+            }
+            // #jogadaespecial en passant
+            if (p is Peao)
+            {
+                if (origem.Coluna != destino.Coluna && pecaCapturada == VulneravelEnPassant)
+                {
+                    Peca peao = Tab.retirarPeca(destino);
+                    Posicao posP;
+                    if (p.Cor == Cor.Branca)
+                    {
+                        posP = new Posicao(3, destino.Coluna);
+                    }
+                    else
+                    {
+                        posP = new Posicao(4, destino.Coluna);
+                    }
+                    Tab.ColocarPeca(peao, posP);
+                }
             }
         }
             public void RealizaJogada(Posicao origem, Posicao destino)
